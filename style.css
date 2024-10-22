@@ -1,0 +1,33 @@
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+}
+.marquee p {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.navbar-nav .nav-link {
+    color: #be0e66; /* Change to your desired color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: red; /* Change to your desired hover color */
+}
+
+h1{
+    color: #FFD700;
+}
+body{ 
+    margin: 0%;
+    padding: 0%;
+    background-color: #1A1A2E;
+    
+}

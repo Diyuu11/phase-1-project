@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Submission</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .diyuu {
+            height: 10%;
+            width: 10vw;
+        }
+        h2 {
+            color: gold;
+            font-size: 2.5em /* Corrected font size */
+            font-family: serif;
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Rounded corners */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+            font-weight: ; /* Make text bold */
+            text-align: justify; /* Justify text */
+            line-height: 1.5; /* Adjust line height for better spacing */
+            background-color{
+              
+            }
+        }
+        .navbar {
+            background-color: #007bff; /* Change this to your desired color */
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: white; /* Change text color */
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Change hover text color */
+        }
+        .navbar-light .navbar-brand {
+            color: white; /* Change logo text color */
+        }
+        .navbar-light .navbar-brand:hover {
+            color: #f8f9fa; /* Change hover logo text color */
+        }
+        .ffff {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container {
+            position: relative; /* Positioning context for absolute children */
+            width: 50%; /* Full width */
+            height: 70%; /* Adjust height for aspect ratio */
+        }
+        .fade-image {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div><img src="./1-removebg-preview.png" alt="logo" class="diyuu"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contacts</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center mt-4">
+    <h1>Welcome to Diyuu Real Estates</h1>
+    <div class="marquee">
+        <p>Your dream home awaits! Find the perfect property today!</p>
+    </div>
+</div>
+<div class="text-center mb-4">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add Property
+    </button>
+</div>
+
+<!-- Modal for adding posts -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="message" class="text-success" role="alert"></div>
+                <form id="add_post_form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="title" required placeholder="Title">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="imageUrl" required placeholder="Image URL">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="author" required placeholder="Author">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea rows="4" placeholder="Description" class="form-control" id="description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="posts_row" class="row"></div>
+
+<section class="row">
+    <div class="col-md-6 image-container">
+        <img src="./lovepik-real-estate-agent-sales-png-image_401510128_wh1200-removebg-preview.png" alt="1" class="fade-image img-fluid">
+    </div>
+    <div class="col-md-6">
+        <h2 style="text-align: center;">
+            <span style="color: gold;">Your Perfect Dream Home awaits you right here today! </span>
+            <span style="color: lightblue;">Discover amazing properties tailored specifically for you.</span>
+            <span style="color: coral;">Join us on this exciting journey to uncover your ideal living space.</span>
+            <span style="color: teal;">Experience the best of the best in real estate with our expertise!</span>
+            <span style="color: purple;">Find your perfect community and create lasting memories together.</span>
+        </h2>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Beautiful House",
+      "imageUrl": "https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg?w=300",
+      "author": "John Doe",
+      "date": "2024-01-01",
+      "description": "A beautiful house in the suburbs."
+    },
+    {
+      "id": 2,
+      "title": "Luxurious Apartment",
+      "imageUrl": "https://www.ubm-development.com/magazin/wp-content/uploads/2020/03/kl-main-building-d-Kopie.jpg",
+      "author": "Jane Smith",
+      "date": "2024-01-02",
+      "description": "A luxurious apartment in the city center."
+    }
+  ]
+}
